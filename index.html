@@ -1,23 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Wedding Invitation</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Merna & Mohamed</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
-  <link rel="stylesheet" href="style.css">
-</head>
+
 <body>
-  <script src="script.js"></script>
 
-<section class="hero">
-  <h1>Mohamed & merna</h1>
-  <p>We’re getting married 💍</p>
-  <div id="countdown"></div>
-</section>
+<!-- شاشة البداية -->
+<div class="cover" onclick="openInvite()">
+  <h1>Open Invitation</h1>
+</div>
 
-<section class="details">
-  <h2>Wedding Details</h2>
-  <p>Date: 15 may 2026</p>
-  <p>Location: cairo</p>
-</section>
+<!-- الموقع -->
+<div id="main" class="hidden">
+
+  <section class="hero">
+    <img src="photo.jpg">
+    <h1>Merna & Mohamed</h1>
+    <p>We Are Getting Married 💍</p>
+  </section>
+
+  <!-- العد التنازلي -->
+  <section class="countdown">
+    <h2>Wedding Countdown</h2>
+    <div id="timer"></div>
+  </section>
+
+  <!-- التفاصيل -->
+  <section class="details">
+    <h2>Event Details</h2>
+    <p>📍 Al Masa Hotel - Nasr City</p>
+    <p>📅 20 June 2026</p>
+  </section>
+
+  <!-- الخريطة -->
+  <section class="map">
+    <iframe 
+      src="https://https://share.google/BGIdZk36y3E7KO3GS =Al+Masa+Hotel+Nasr+City&output=embed">
+    </iframe>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp">
+    <h2>RSVP</h2>
+    <input type="text" placeholder="Your Name">
+    <button>Confirm Attendance</button>
+  </section>
+
+</div>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
