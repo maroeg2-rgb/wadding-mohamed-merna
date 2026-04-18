@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  text-align: center;
+  background: linear-gradient(to right, #ffe6f0, #fff);
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 2s ease-in;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#countdown {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.details {
+  padding: 50px;
+  background: white;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
